@@ -2,7 +2,7 @@
 --------------
 
 Shared at oshpark:
-https://oshpark.com/shared_projects/fC9XhvWo
+<https://oshpark.com/shared_projects/fC9XhvWo>
 
 This is a tiny PCB facilitating (atleast) two different circuits
 that implement charging of a *protected* li-ion cell + night-light
