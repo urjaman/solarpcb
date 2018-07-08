@@ -20,6 +20,7 @@ This circuit will activate the nightlight when Vpanel < (Vbattery - Vth),
 that is you need almost the full battery voltage to turn off the load.
 
 Effective schematic:
+ 
  S+ ---------------- B+ & L+
  
             /------- L-
@@ -40,6 +41,7 @@ it disables the load much earlier, at the cost of a few microamps
 through the pull-up resistor during the off-time.
 
 Effective schematic:
+ 
  S+ -*->|----*------ B+ & L+
      |       |
      |       R
@@ -76,7 +78,7 @@ and set it up as a slightly more constant current source for
 your LEDs...
 
 Also, for funsies the entire schematic ASCIIfied:
-
+ 
  S+ -*->|----*--------- B+ & L+
      |       |
      R       R  /-J-*-- L-
