@@ -19,6 +19,15 @@ functionality from a solar panel (usual suspect is one of those
 This circuit will activate the nightlight when Vpanel < (Vbattery - Vth),
 that is you need almost the full battery voltage to turn off the load.
 
+Effective schematic:
+ S+ ---------------- B+ & L+
+ 
+            /------- L-
+     /----| Q
+     |      |
+ S- -*-|<---*------- B-
+
+
 ## Two-fet circuit ##
 - Install the S+ to B+ diode
 - install both N-fets
@@ -29,6 +38,17 @@ that is you need almost the full battery voltage to turn off the load.
 This ciruit will activate the nightlight when Vpanel < Vth, that is
 it disables the load much earlier, at the cost of a few microamps
 through the pull-up resistor during the off-time.
+
+Effective schematic:
+ S+ -*->|----*------ B+ & L+
+     |       |
+     |       R
+     |       |    /- L-
+     |    /--*--| Q
+     \--| Q       |
+          |       |
+ S- ------*-------*- B- 
+
 
 ## Things and stuff ##
 
@@ -54,3 +74,18 @@ and have fun :P.
 Another funky idea: put a BJT on the second transistor position
 and set it up as a slightly more constant current source for
 your LEDs...
+
+Also, for funsies the entire schematic ASCIIfied:
+
+ S+ -*->|----*--------- B+ & L+
+     |       |
+     R       R  /-J-*-- L-
+     |       |  |   |
+     |    /--*--*-| Q
+     *--| Q         |
+     |    |         |
+     R    |         |
+     |    |         |
+ S- -*-|<-*---------*-- B-
+
+
